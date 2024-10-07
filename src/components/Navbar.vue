@@ -1,5 +1,6 @@
 <script setup>
 import { defineProps } from "vue";
+
 const props = defineProps({
   title: {
     type: String,
@@ -12,15 +13,18 @@ const props = defineProps({
     <h1 class="title">{{ title }}</h1>
   </div>
 </template>
+
 <style scoped>
 .navbar {
   background-color: blue;
-  margin-bottom: 40px;
-
+  
   .title {
     font-size: 20px;
     color: white;
+    width: 100%;
     margin-left: 10px;
+    text-align: center;
   }
 }
+
 </style>
